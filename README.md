@@ -33,7 +33,7 @@ $( document ).ready(function() {
 		pauseButton:		'className',				// class name of pause button
 		resetButton:		'className',				// class name of reset button
 		activeProperties:	activeProperties,			// CSS properties to apply when button is active
-		inactiveProperties:	inactiveProperties			// CSS properties to apply when button is inactive
+		inactiveProperties:	inactiveProperties,			// CSS properties to apply when button is inactive
 		rows:				3	,						// number of rows													 default: 3		 min: 2
 		columns:			3	,						// number of columns												 default: 3		 min: 2
 		emptyTileIndex:		2	,						// index of the empty tile, 0 = first tile, 1 = second tile, etc	 default: 0		 min: 0		max: rows*columns
