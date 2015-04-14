@@ -20,12 +20,12 @@
 {
 	.sliding-puzzle { width: 540px;}
 	.background-section {width: 180px; height: 120px;}
-	.scroller {margin-bottom: 100px;}
+	.scroller {margin-bottom: 200px;}
 }
 
 @media only screen and (max-width: 539px) 
 {
 	.sliding-puzzle { width: 315px;}
 	.background-section {width: 105px; height: 70px;}
-	.scroller {margin-bottom: 70px;}
+	.scroller {margin-bottom: 100px;}
 }
