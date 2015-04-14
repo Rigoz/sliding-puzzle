@@ -11,6 +11,7 @@ Add configuration:
 ```
 $( document ).ready(function() {
 	var options = {
+		elementClass:		'className',				// class name of your grid elements
 		rows:				3	,						// number of rows													 default: 3		 min: 2
 		columns:			3	,						// number of columns												 default: 3		 min: 2
 		emptyTileIndex:		2	,						// index of the empty tile, 0 = first tile, 1 = second tile, etc	 default: 0		 min: 0		max: rows*columns
@@ -25,3 +26,4 @@ $( document ).ready(function() {
 	var puzzle = new SlidingPuzzle(options);
 });
 ```
+Your grid wrapper must have the class name "sliding-puzzle"
