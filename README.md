@@ -4,7 +4,7 @@ Sliding Puzzle is a funny jQuery plugin that lets you cover a grid in your layou
 # Usage
 Load the plugin on your page:
 ```
-<script src="./sliding-puzzle.js"></script>
+<script src="./sliding-puzzle.min.js"></script>
 ```
 
 Add configuration:
