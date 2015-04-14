@@ -18,9 +18,23 @@ Load the plugin on your page:
 Add configuration:
 ```
 $( document ).ready(function() {
+	var activeProperties = {
+		boxShadow:	'box-shadow: inset -1px 2px 5px 0px rgba(50, 50, 50, 0.35)',
+	};
+
+	var inactiveProperties = {
+		boxShadow:	'none',
+	};
+	
 	var options = {
 		wrapperClass:		'className',				// class name of your grid container
 		elementClass:		'className',				// class name of your grid elements
+		elementClass:		'background-section',		// class name of your grid elements
+		playButton:			'puzzle-play-button',		// class name of play button
+		pauseButton:		'puzzle-pause-button',		// class name of pause button
+		resetButton:		'puzzle-reset-button',		// class name of reset button
+		activeProperties:	activeProperties,			// CSS properties to apply when button is active
+		inactiveProperties:	inactiveProperties			// CSS properties to apply when button is inactive
 		rows:				3	,						// number of rows													 default: 3		 min: 2
 		columns:			3	,						// number of columns												 default: 3		 min: 2
 		emptyTileIndex:		2	,						// index of the empty tile, 0 = first tile, 1 = second tile, etc	 default: 0		 min: 0		max: rows*columns
