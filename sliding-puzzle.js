@@ -530,6 +530,7 @@ SlidingPuzzle.prototype.setTilesCSS = function() {
 		transition: 		_transitionDuration + 'ms ',
 		transformStyle:		'preserve-3d',
 		position:			'relative',
+		boxSizing:			'border-box',
 		width:				'100%',
 		height:				'100%',
 	});
@@ -555,6 +556,7 @@ SlidingPuzzle.prototype.setCoverCSS = function() {
 			transition:			_transitionDuration + 'ms',
 			transformStyle: 	'preserve-3d',
 			backfaceVisibility:	'hidden',
+			boxSizing:			'border-box',
 			transform:			rotateValue,
 			backgroundImage:	image,
 			backgroundSize:		_width + 'px ' + _height + 'px',
@@ -584,6 +586,7 @@ SlidingPuzzle.prototype.setBackCSS = function() {
 			transformStyle: 	'preserve-3d',
 			backfaceVisibility:	'hidden',
 			cursor:				'pointer',
+			boxSizing:			'border-box',
 			transform:			rotateValue,
 			backgroundImage:	image,
 			backgroundSize:		_width + 'px ' + _height + 'px',
