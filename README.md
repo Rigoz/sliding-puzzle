@@ -11,6 +11,7 @@ Add configuration:
 ```
 $( document ).ready(function() {
 	var options = {
+		wrapperClass:		'className',					// class name of your grid container
 		elementClass:		'className',				// class name of your grid elements
 		rows:				3	,						// number of rows													 default: 3		 min: 2
 		columns:			3	,						// number of columns												 default: 3		 min: 2
