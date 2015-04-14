@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sliding Puzzle - Rigoz</title>
+<!-- Meta section -->
+<meta charset="UTF-8" />
+<!-- CSS section -->
+<link rel="stylesheet" type="text/css" href=".style.css" />
+<link href="http://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!-- JS section -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="./sliding-puzzle.js"></script>
+</head>
+<body>
+  <script>
+				$( document ).ready(function() {
+					var activeProperties = {
+						boxShadow:	'inset -1px 2px 5px 0px rgba(50, 50, 50, 0.35)',
+					};
+
+					var inactiveProperties = {
+						boxShadow:	'-1px 2px 5px 0px rgba(50, 50, 50, 0.35)',
+					};
+				
+					var options = {
+						wrapperClass:		'sliding-puzzle',			// class name of your grid container
+						elementClass:		'background-section',		// class name of your grid elements
+						playButton:			'puzzle-play-button',		// class name of play button
+						pauseButton:		'puzzle-pause-button',		// class name of pause button
+						resetButton:		'puzzle-reset-button',		// class name of reset button
+						activeProperties:	activeProperties,			// CSS properties to apply when button is active
+						inactiveProperties:	inactiveProperties,			// CSS properties to apply when button is inactive
+						rows:				3	,						// number of rows													 default: 3		 min: 2
+						columns:			3	,						// number of columns												 default: 3		 min: 2
+						emptyTileIndex:		2	,						// index of the empty tile, 0 = first tile, 1 = second tile, etc	 default: 0		 min: 0		max: rows*columns
+						playInterval:		2000,						// interval between tiles move, must be higher than animDuration	 default: 1000	 min: 1000
+						animDuration:		1000,						// duration of move animation, must be lower than playInterval		 default: 500	 min: 500
+						coverBackgroundURL:	'../img/cat-front.png',		// url to the background image for the cover
+						tilesBackgroundURL:	'../img/cat-back.png',		// url to the background image for the tiles
+						flipOnVisible:		true,						// flip the tiles only when the game container is visible			 default: false
+						pauseOnBlur:		true,						// pause auto-play if the page loses focus or the user scrolls out	 default: true
+					};
+					
+					var puzzle = new SlidingPuzzle(options);
+				});
+		</script>
+		<div class="sliding-puzzle clear">
+			<div class="background-section">
+				<a href="#1">
+					<img src="../img/playing-cat.jpg">
+					<div class="overlay">
+						<h1>Playing cat</h1>
+						<h2>Check out this cute cat play</h2>
+					</div>
+				</a>
+			</div>
+			<div class="background-section">
+				<a href="#2">
+					<img src="../img/devote-cat.jpg">
+					<div class="overlay">
+						<h1>Devote cat</h1>
+						<h2>Check out this cute cat pray</h2>
+					</div>
+				</a>
+			</div>
+			<div class="background-section">
+				<a href="#3">
+					<img src="../img/elegant-cat.jpg">
+					<div class="overlay">
+						<h1>Elegant cat</h1>
+						<h2>Check out this cute cat being fashionable</h2>
+					</div>
+				</a>
+			</div>
+			<div class="background-section">
+				<a href="#4">
+					<img src="../img/impressed-cat.jpg">
+					<div class="overlay">
+						<h1>Impressed cat</h1>
+						<h2>Check out this cute cat impressed by something</h2>
+					</div>
+				</a>
+			</div>
+			<div class="background-section">
+				<a href="#5">
+					<img src="../img/scared-cat.jpg">
+					<div class="overlay">
+						<h1>Scared cat</h1>
+						<h2>Check out this cute cat being so scared</h2>
+					</div>
+				</a>
+			</div>
+			<div class="background-section">
+				<a href="#6">
+					<img src="../img/sad-cat.jpg">
+					<div class="overlay">
+						<h1>Sad cat</h1>
+						<h2>Check out this cute cat being so sad</h2>
+					</div>
+				</a>
+			</div>
+			<div class="background-section">
+				<a href="#7">
+					<img src="../img/lion-cat.jpg">
+					<div class="overlay">
+						<h1>Lion cat</h1>
+						<h2>Check out this cute cat being so regal</h2>
+					</div>
+				</a>
+			</div>
+			<div class="background-section">
+				<a href="#8">
+					<img src="../img/angry-cat.jpg">
+					<div class="overlay">
+						<h1>Fierce cat</h1>
+						<h2>Check out this cute cat being so fierce</h2>
+					</div>
+				</a>
+			</div>
+			<div class="background-section">
+				<a href="#9">
+					<img src="../img/grumpy-cat.jpg">
+					<div class="overlay">
+						<h1>Grumpy cat</h1>
+						<h2>Check out this cute cat being so grumpy</h2>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="sliding-puzzle-console">
+			<a href="javascript:;" class="puzzle-play-button" alt="Play" title="Play"><i class="fa fa-play"></i></a>
+			<a href="javascript:;" class="puzzle-pause-button clicked" alt="Pause" title="Pause"><i class="fa fa-pause"></i></a>
+			<a href="javascript:;" class="puzzle-reset-button" alt="Reset" title="Reset"><i class="fa fa-step-backward"></i></a>
+			<div class="puzzle-console-clear"></div>
+		</div>
+</body>
+</html>
