@@ -2,8 +2,9 @@
 Sliding Puzzle is a funny jQuery plugin that lets you cover a grid in your layout with a sliding puzzle that uncovers you grid elements randomly or lets the user slide the tiles manually.
 
 # Features
+- Defrag Intro: Puzzle cover breaks into tiles the first time user sees it, with a "flipping card" animation
 - Autoplay: Tiles move randomly uncovering grid elements underneath. A tile moved on a direction will never move back on the next step, but rather choose a different direction between those available.
-- Smooth drag: Users can drag tiles smoothly to slide between grid elements.
+- Smooth Drag: Users can drag tiles smoothly to slide between grid elements.
 - Responsive: Tiles will be resized when the page width changes, however the puzzle will pause and tiles will be reset to default position
 - Touch support: Should be working nicely with touch devices, however multitouch can cause issues
 
