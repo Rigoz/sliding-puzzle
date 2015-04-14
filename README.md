@@ -28,7 +28,7 @@ $( document ).ready(function() {
 	
 	var options = {
 		wrapperClass:		'className',				// class name of your grid container
-		elementClass:		'className',		// class name of your grid elements
+		elementClass:		'className',				// class name of your grid elements
 		playButton:			'className',				// class name of play button
 		pauseButton:		'className',				// class name of pause button
 		resetButton:		'className',				// class name of reset button
