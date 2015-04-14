@@ -9,13 +9,17 @@ Sliding Puzzle is a funny jQuery plugin that lets you cover a grid in your layou
 - Responsive: Tiles will be resized when the page width changes, however the puzzle will pause and tiles will be reset to default position
 - Touch support: Should be working nicely with all touch devices, however multitouch may cause issues
 
+
 # Usage
 Load the plugin on your page:
+
 ```
 <script src="./sliding-puzzle.min.js"></script>
 ```
 
+
 Add configuration:
+
 ```
 $( document ).ready(function() {
 	var activeProperties = {
@@ -48,5 +52,13 @@ $( document ).ready(function() {
 	var puzzle = new SlidingPuzzle(options);
 });
 ```
+
+
 # Demo
+
+link
+
+
 # Requirements
+- jQuery
+- CSS3 'transform' property (Chrome 36.0, IE 10.0, Mozilla 16.0, Safari 4.0, Opera 23.0)
