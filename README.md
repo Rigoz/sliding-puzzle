@@ -3,7 +3,7 @@ Sliding Puzzle is a funny jQuery plugin that lets you cover a grid in your layou
 
 1. [Features](#features)
 2. [Usage](#usage)
-3. [Demo](#demos)
+3. [Demo](#demo)
 4. [Requirements](#requirements)
 
 # Features
