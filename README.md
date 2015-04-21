@@ -63,7 +63,7 @@ $( document ).ready(function() {
 # Demo
 
 Basic example with 3x3 grid
-http://www.rigo7.com/projects/sliding-puzzle
+http://www.rigo7.com/projects/sliding-puzzle?source=git
 
 
 # Requirements
